@@ -1,7 +1,11 @@
 const timeline_one = gsap.timeline({
     scrollTrigger: {
-        trigger: "#main", // markers:true,
-        start: "38% 50%", end: "100% 50%", scrub: 2, pin: true
+        trigger: "#main",
+        // markers:true,
+        start: "38% 50%",
+        end: "100% 50%",
+        scrub: 2,
+        pin: true
     }
 });
 timeline_one
@@ -33,6 +37,10 @@ timeline_one
 
 window.addEventListener('mousemove', function (event) {
     gsap.to('#cursor', {
-        x: event.x, y: event.y, ease: 'back.out', autoAlpha: 1, duration: 0.2
+        x: event.x,
+        y: event.y,
+        ease: 'back.out',
+        autoAlpha: 1,
+        duration: 0.2
     });
 });
