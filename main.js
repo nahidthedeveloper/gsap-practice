@@ -44,3 +44,22 @@ window.addEventListener('mousemove', function (event) {
         duration: 0.2
     });
 });
+
+
+gsap.to('#gsap', {
+    x: 2000,
+    duration: 10,
+    ease: "expoScale(0.5,7,none)",
+    delay: 0.5,
+    repeat: -1,
+    // yoyo: true,
+    // stagger: 0.3, // same type multi element same animation separately
+})
+
+gsap.from('.text',{
+    y: 30,
+    opacity: 0,
+    delay: 1,
+    duration: 0.5,
+    scale: 0.2,
+})
